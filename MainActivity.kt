@@ -12,6 +12,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.dariel.relaxulsa.imc.IMC
+import com.dariel.relaxulsa.imc.IMCViewModel
+import com.dariel.relaxulsa.piedrapapeltijer.PiedraPapelTijera
+import com.dariel.relaxulsa.piedrapapeltijer.PptViewModel
 import com.dariel.relaxulsa.ui.theme.RelaxUlsaTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,7 +32,9 @@ class MainActivity : ComponentActivity() {
                 }
                     //LoginView()
                         // MainScreen(SoccerScoreViewModel())
-                Calculadora( SumViewModel())
+               // Calculadora( SumViewModel())
+                //PiedraPapelTijera( PptViewModel())
+                IMC(IMCViewModel())
             }
         }
     }
