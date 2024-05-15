@@ -12,6 +12,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.dariel.relaxulsa.gym.view.GymView
+import com.dariel.relaxulsa.gym.viewmodel.GymViewModel
 import com.dariel.relaxulsa.imc.IMC
 import com.dariel.relaxulsa.imc.IMCViewModel
 import com.dariel.relaxulsa.piedrapapeltijer.PiedraPapelTijera
@@ -34,7 +36,8 @@ class MainActivity : ComponentActivity() {
                         // MainScreen(SoccerScoreViewModel())
                // Calculadora( SumViewModel())
                 //PiedraPapelTijera( PptViewModel())
-                IMC(IMCViewModel())
+                //IMC(IMCViewModel())
+                GymView(viewModel = GymViewModel())
             }
         }
     }
