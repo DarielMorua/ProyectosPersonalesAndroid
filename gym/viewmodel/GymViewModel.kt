@@ -4,12 +4,12 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.dariel.relaxulsa.gym.models.Gym
-import com.dariel.relaxulsa.gym.network.RetrofitInstance
+import com.dariel.relaxulsa.gym.network.RetrofitInstancee
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
 class GymViewModel : ViewModel() {
-    private val ApiGymService = RetrofitInstance.api
+    private val ApiGymService = RetrofitInstancee.api
     val gyms = MutableStateFlow<List<Gym>>(emptyList())
 
     fun getGyms() {

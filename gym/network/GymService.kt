@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 
 interface GymService {
-    @GET("DarielMorua/2292d7b95d33fe23734a21485728037a/raw/87a861a04f3fe5e0ed6283bfffd5797e866d46be/gyms.json")
+    @GET("DarielMorua/b8744e1aadfb10aa5d4a780be42ca4cd/raw/6bf6d09b36b96e8f669630d11a7d0e10aec261c3/restaurants.json")
     suspend fun getGyms(): List<Gym>
 
 }

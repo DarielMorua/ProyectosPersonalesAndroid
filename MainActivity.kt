@@ -12,49 +12,35 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.dariel.relaxulsa.gym.view.GymView
-import com.dariel.relaxulsa.gym.viewmodel.GymViewModel
-import com.dariel.relaxulsa.imc.IMC
-import com.dariel.relaxulsa.imc.IMCViewModel
-import com.dariel.relaxulsa.piedrapapeltijer.PiedraPapelTijera
-import com.dariel.relaxulsa.piedrapapeltijer.PptViewModel
+import androidx.navigation.NavController
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+
+import com.dariel.relaxulsa.restaurants.view.RestaurantApp
 import com.dariel.relaxulsa.ui.theme.RelaxUlsaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            RelaxUlsaTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                }
-                    //LoginView()
-                        // MainScreen(SoccerScoreViewModel())
-               // Calculadora( SumViewModel())
-                //PiedraPapelTijera( PptViewModel())
-                //IMC(IMCViewModel())
-                GymView(viewModel = GymViewModel())
-            }
+            //val navController = rememberNavController()
+        RestaurantApp()
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    RelaxUlsaTheme {
-        Greeting("Android")
+    @Composable
+    fun Greeting(name: String, modifier: Modifier = Modifier) {
+        Text(
+            text = "Hello $name!",
+            modifier = modifier
+        )
     }
-}
+
+    @Preview(showBackground = true)
+    @Composable
+    fun GreetingPreview() {
+        RelaxUlsaTheme {
+            Greeting("Android")
+        }
+    }

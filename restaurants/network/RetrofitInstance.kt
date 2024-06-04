@@ -1,15 +1,15 @@
-package com.dariel.relaxulsa.gym.network
+package com.dariel.relaxulsa.restaurants.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
     private const val BASE_URL = "https://gist.githubusercontent.com/"
-    val api: GymService by lazy {
+    val api: RestaurantService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(GymService::class.java)
+            .create(RestaurantService::class.java)
     }
 }
