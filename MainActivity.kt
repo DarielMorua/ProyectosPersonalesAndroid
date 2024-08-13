@@ -17,6 +17,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 
 import com.dariel.relaxulsa.restaurants.view.RestaurantApp
+import com.dariel.relaxulsa.pantalla.Pantalla
+
 import com.dariel.relaxulsa.ui.theme.RelaxUlsaTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +26,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             //val navController = rememberNavController()
-        RestaurantApp()
+       // RestaurantApp()
+            Pantalla()
         }
     }
 }

@@ -17,6 +17,7 @@ fun RestaurantApp() {
     NavHost(navController = navController, startDestination = "restaurantList") {
         composable("restaurantList") {
             RestaurantView(navController = navController, viewModel = viewModel)
+
         }
         composable("restaurantDetail/{restaurantId}") { backStackEntry ->
             val restaurantId = backStackEntry.arguments?.getString("restaurantId")
