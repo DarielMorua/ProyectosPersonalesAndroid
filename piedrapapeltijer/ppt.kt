@@ -11,10 +11,11 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.painterResource
+import androidx.navigation.NavController
 import com.dariel.relaxulsa.R
 
 @Composable
-fun PiedraPapelTijera(viewModel: PptViewModel) {
+fun piedraPapelTijeraView(viewModel: PptViewModel,navController: NavController) {
     val result: Int by viewModel.result.observeAsState(R.drawable.moai)
 
     Column {

@@ -40,7 +40,7 @@ import coil.compose.AsyncImage
 import com.dariel.relaxulsa.restaurants.viewmodel.RestaurantViewModel
 
 @Composable
-fun RestaurantView(viewModel: RestaurantViewModel, navController: NavHostController) {
+fun restaurantView(viewModel: RestaurantViewModel, navController: NavHostController) {
     val restaurants by viewModel.restaurants.collectAsState()
 
     LazyColumn(

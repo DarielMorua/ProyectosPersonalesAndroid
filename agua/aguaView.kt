@@ -12,11 +12,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.dariel.relaxulsa.R
 
 
 @Composable
-fun aguaApp(viewModel: AguaViewModel) {
+fun aguaView(viewModel: AguaViewModel, navController: NavController) {
     val totalAgua: Double by viewModel.getResult().observeAsState(0.0)
 
 

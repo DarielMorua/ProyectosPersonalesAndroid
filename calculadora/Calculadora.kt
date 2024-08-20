@@ -17,9 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 @Composable
-fun Calculadora(viewModel: SumViewModel){
+fun calculadoraView(viewModel: SumViewModel,navController: NavController){
     var value1 by remember{ mutableStateOf("")}
     var value2 by remember{ mutableStateOf("")}
     var value3 by remember{ mutableStateOf("")}

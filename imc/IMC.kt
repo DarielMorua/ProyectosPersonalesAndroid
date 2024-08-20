@@ -22,13 +22,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.dariel.relaxulsa.R
 import com.dariel.relaxulsa.calculadora.Sum
 import com.dariel.relaxulsa.soccer.SoccerScoreLocalModel
 
 
 @Composable
-fun IMC(viewModel: IMCViewModel){
+fun imcView(viewModel: IMCViewModel, navController: NavController){
     var value1 by remember{ mutableStateOf("")}
     var value2 by remember{ mutableStateOf("")}
 

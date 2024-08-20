@@ -1,6 +1,6 @@
 package com.dariel.relaxulsa
 
-import com.dariel.relaxulsa.calculadora.Calculadora
+import com.dariel.relaxulsa.calculadora.calculadoraView
 import com.dariel.relaxulsa.calculadora.SumViewModel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,19 +15,21 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.dariel.relaxulsa.pantalla.MainMenu
+import com.dariel.relaxulsa.pantalla.MyAppNavigationView
 
 import com.dariel.relaxulsa.restaurants.view.RestaurantApp
-import com.dariel.relaxulsa.pantalla.Pantalla
 
 import com.dariel.relaxulsa.ui.theme.RelaxUlsaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             //val navController = rememberNavController()
-       // RestaurantApp()
-            Pantalla()
+//MainMenu()
+            MyAppNavigationView()
         }
     }
 }

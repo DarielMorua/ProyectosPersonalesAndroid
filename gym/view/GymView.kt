@@ -16,11 +16,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.dariel.relaxulsa.gym.viewmodel.GymViewModel
 import coil.compose.AsyncImage
 
 @Composable
-fun GymView(viewModel: GymViewModel) {
+fun gymView(viewModel: GymViewModel, navController: NavController) {
     val gyms by viewModel.gyms.collectAsState()
 
     LazyColumn(

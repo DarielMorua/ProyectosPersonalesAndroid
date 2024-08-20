@@ -5,7 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.dariel.relaxulsa.restaurants.view.RestaurantView
+import com.dariel.relaxulsa.restaurants.view.restaurantView
 import com.dariel.relaxulsa.restaurants.viewmodel.RestaurantViewModel
 import com.dariel.relaxulsa.restaurants.view.RestaurantInfoView
 
@@ -16,7 +16,7 @@ fun RestaurantApp() {
 
     NavHost(navController = navController, startDestination = "restaurantList") {
         composable("restaurantList") {
-            RestaurantView(navController = navController, viewModel = viewModel)
+            restaurantView(navController = navController, viewModel = viewModel)
 
         }
         composable("restaurantDetail/{restaurantId}") { backStackEntry ->
