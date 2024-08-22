@@ -10,6 +10,7 @@ object routes {
     var restaurantView= "RestaurantView"
     var soccerView= "SoccerView"
     var tieFighterView= "TieFighterView"
+    var MyAppNavigationView= "MyAppNavigationView"
 
 
 }
