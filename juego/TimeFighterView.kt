@@ -69,10 +69,16 @@ fun TimeFighterView(viewModel: TimeFighterViewModel, navController: NavControlle
         content = {
             Box(modifier = Modifier.fillMaxSize(),        contentAlignment = Alignment.Center) {
 
-                Text(text = "High Score", modifier = Modifier.padding(16.dp).align(Alignment.TopStart))
+                Text(text = "High Score", modifier = Modifier
+                    .padding(16.dp)
+                    .align(Alignment.TopStart))
 
-                Text(text = "Time Left: ${viewModel.timeLeft} ", modifier = Modifier.padding(16.dp).align(Alignment.TopEnd))
-                Text(text = "Score: ${viewModel.counter}", modifier = Modifier.padding(16.dp).align(Alignment.TopCenter))
+                Text(text = "Time Left: ${viewModel.timeLeft} ", modifier = Modifier
+                    .padding(16.dp)
+                    .align(Alignment.TopEnd))
+                Text(text = "Score: ${viewModel.counter}", modifier = Modifier
+                    .padding(16.dp)
+                    .align(Alignment.TopCenter))
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
@@ -89,6 +95,12 @@ fun TimeFighterView(viewModel: TimeFighterViewModel, navController: NavControlle
                         modifier = Modifier.size(animatedButtonSize)
                     ) {
                         Text(text = "Press me")
+                    }
+                    Button(onClick = { viewModel.resetGame() },
+                        enabled= viewModel.isButtonEnable==false) {
+                        Text(text = "Reset")
+
+                        
                     }
                 }
             }

@@ -19,6 +19,7 @@ class TimeFighterViewModel : ViewModel() {
         private set
     private var timerJob: Job? = null
 
+
     fun onButtonClicked() {
         counter++
         if (timerJob == null || timeLeft == 0) {
@@ -41,5 +42,13 @@ class TimeFighterViewModel : ViewModel() {
         }
 
 
+
+    }
+     fun resetGame() {
+        counter = 0
+        timeLeft = 10
+        timerJob?.cancel()
+        timerJob = null
+         isButtonEnable=true
     }
 }
