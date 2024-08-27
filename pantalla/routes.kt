@@ -9,7 +9,7 @@ object routes {
     var piedraPapelTijeraView = "PiedraPapelTijeraView"
     var restaurantView= "RestaurantView"
     var soccerView= "SoccerView"
-    var tieFighterView= "TieFighterView"
+    var TimeFighterView= "TimeFighterView"
     var MyAppNavigationView= "MyAppNavigationView"
 
 

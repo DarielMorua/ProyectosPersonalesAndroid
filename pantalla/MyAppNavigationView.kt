@@ -27,7 +27,8 @@ import com.dariel.relaxulsa.gym.view.gymView
 import com.dariel.relaxulsa.gym.viewmodel.GymViewModel
 import com.dariel.relaxulsa.imc.IMCViewModel
 import com.dariel.relaxulsa.imc.imcView
-import com.dariel.relaxulsa.juego.TieFighterView
+import com.dariel.relaxulsa.juego.TimeFighterView
+import com.dariel.relaxulsa.juego.TimeFighterViewModel
 import com.dariel.relaxulsa.piedrapapeltijer.PptViewModel
 import com.dariel.relaxulsa.piedrapapeltijer.piedraPapelTijeraView
 import com.dariel.relaxulsa.restaurants.view.restaurantView
@@ -42,9 +43,6 @@ fun MyAppNavigationView() {
 
         composable(routes.MyAppNavigationView) {
             MyAppNavigationView()
-        }
-        composable(routes.tieFighterView) {
-            TieFighterView(navController = navContoller)
         }
         composable(routes.firstPartialView) {
             FirstPartialView(navContoller)
@@ -70,6 +68,9 @@ fun MyAppNavigationView() {
         }
         composable(routes.soccerView) {
             soccerView(SoccerScoreViewModel(),navContoller)
+        }
+        composable(routes.TimeFighterView) {
+            TimeFighterView(TimeFighterViewModel(), navContoller)
         }
 
     })
@@ -128,6 +129,11 @@ fun FirstPartialView(navController: NavController) {
                     navController.navigate(routes.soccerView)
                 }) {
                     Text(text = "Soccer")
+                }
+                Button(onClick = {
+                    navController.navigate(routes.TimeFighterView)
+                }) {
+                    Text(text = "Time Fighter")
                 }
             }
         },

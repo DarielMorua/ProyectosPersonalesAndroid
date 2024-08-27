@@ -16,7 +16,7 @@ val NavBarItems = listOf(
     BarItem(
         title = "Segundo Parcial",
         image = Icons.Filled.AddCircle,
-        route = routes.tieFighterView
+        route = routes.TimeFighterView
     ),
     BarItem(
         title = "Tercer Parcial",
