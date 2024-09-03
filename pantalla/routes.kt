@@ -11,6 +11,8 @@ object routes {
     var soccerView= "SoccerView"
     var TimeFighterView= "TimeFighterView"
     var MyAppNavigationView= "MyAppNavigationView"
+    var LottieAnimationView= "LottieAnimationView"
+    var SpotifyView= "SpotifyView"
 
 
 }
