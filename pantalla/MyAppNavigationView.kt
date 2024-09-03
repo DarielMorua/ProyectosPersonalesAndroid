@@ -35,6 +35,7 @@ import com.dariel.relaxulsa.restaurants.view.restaurantView
 import com.dariel.relaxulsa.restaurants.viewmodel.RestaurantViewModel
 import com.dariel.relaxulsa.soccer.SoccerScoreViewModel
 import com.dariel.relaxulsa.soccer.soccerView
+import com.dariel.relaxulsa.spotify.SpotifyView
 
 @Composable
 fun MyAppNavigationView() {
@@ -71,6 +72,9 @@ fun MyAppNavigationView() {
         }
         composable(routes.TimeFighterView) {
             TimeFighterView(TimeFighterViewModel(), navContoller)
+        }
+        composable(routes.SpotifyView){
+            SpotifyView(navContoller)
         }
 
     })
@@ -134,6 +138,10 @@ fun FirstPartialView(navController: NavController) {
                     navController.navigate(routes.TimeFighterView)
                 }) {
                     Text(text = "Time Fighter")
+                }
+                Button(onClick = { navController.navigate(routes.SpotifyView) }) {
+                    Text(text = "Spotify")
+
                 }
             }
         },
