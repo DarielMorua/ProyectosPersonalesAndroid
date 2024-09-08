@@ -15,7 +15,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.dariel.relaxulsa.pantalla.MainMenu
 import com.dariel.relaxulsa.pantalla.MyAppNavigationView
 
 import com.dariel.relaxulsa.restaurants.view.RestaurantApp

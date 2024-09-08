@@ -1,5 +1,7 @@
 package com.dariel.relaxulsa.pantalla
 
+import com.airbnb.lottie.LottieAnimationView
+
 object routes {
     var firstPartialView = "FirstView"
     var waterView = "WaterView"
@@ -13,6 +15,7 @@ object routes {
     var MyAppNavigationView= "MyAppNavigationView"
     var LottieAnimationView= "LottieAnimationView"
     var SpotifyView= "SpotifyView"
+    var ManzanasView = "ManzanasView"
 
 
 }
