@@ -5,15 +5,15 @@ Las imágenes normalmente se agregan en la carpeta res/drawable del proyecto aun
 En el curso se usa el IDE de Android Studio con el lenguaje Kotlin conformado con Jetpack Compose
 
 # ¿En cuál archivo se codifica la interacción del usuario con la aplicación?
-La interacción del usuario se codifica generalmente en los archivos de actividad (Activity) o fragmentos (Fragment)
+Las interacción se codifican en los archivos de actividad o views
 
 # Explique cuál es la diferencia entre var y val.
-var: Es utilizado para declarar variables que pueden cambiar a lo largo del tiempo
-val: Es utilizado para declarar variables cuyo valor no puede cambiar 
+var: Es utilizado para declarar variables que pueden cambiar a 
+val: Es utilizado para declarar variables que no se pueden cambiar 
 
-¿Qué es el AVD Manager y para qué sirve?
-El AVD Manager (Android Virtual Device Manager) es un emulador de un dispositivo celular que tiene Android
+# ¿Qué es el AVD Manager y para qué sirve?
+El AVD Manager (Android Virtual Device Manager) es una herramienta dentro que permite a los desarrolladores crear, configurar y gestionar dispositivos emulados que simulan dispositivos Androi
 
 La expresión “He terminado el examen teórico de $subject” es:
 B) String Interpolation
-La interpolación de cadenas es una forma de poner valores dentro de un String usando una variable ($var)
+
