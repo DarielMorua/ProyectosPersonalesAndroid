@@ -33,7 +33,10 @@ import androidx.navigation.NavController
 import com.dariel.relaxulsa.R
 
 import android.widget.Toast
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.input.KeyboardType
 
 @Composable
 fun ManzanasView(viewModel: ManzanasViewModel = viewModel(), navController: NavController) {
@@ -43,7 +46,7 @@ fun ManzanasView(viewModel: ManzanasViewModel = viewModel(), navController: NavC
     val result by viewModel.result.observeAsState(0.0)
     var backgroundColor by remember { mutableStateOf(Color.White) }
 
-    Box(modifier = Modifier.padding(16.dp).background(backgroundColor)) {
+    Box(modifier = Modifier.padding(16.dp).background(backgroundColor).fillMaxSize()) {
         Column {
             Image(
                 painter = painterResource(id = R.drawable.manzana),
@@ -71,6 +74,7 @@ fun ManzanasView(viewModel: ManzanasViewModel = viewModel(), navController: NavC
                     },
                     placeholder = { Text(text = "Producción Total") },
                     label = { Text(text = "Producción Total") },
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     textStyle = TextStyle(color = Color.Black),
                     modifier = Modifier
                         .weight(1f)
@@ -226,6 +230,6 @@ fun ManzanasView(viewModel: ManzanasViewModel = viewModel(), navController: NavC
     }
 
     LaunchedEffect(result) {
-        backgroundColor = if (result >= 80) Color.Red else Color.White
+        backgroundColor = if (result >= 70) Color.Red else Color.White
     }
 }
