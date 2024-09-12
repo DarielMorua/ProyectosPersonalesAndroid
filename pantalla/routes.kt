@@ -16,6 +16,6 @@ object routes {
     var LottieAnimationView= "LottieAnimationView"
     var SpotifyView= "SpotifyView"
     var ManzanasView = "ManzanasView"
-
+    var CardGameView = "CardGameView"
 
 }

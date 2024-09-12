@@ -27,6 +27,8 @@ import com.dariel.relaxulsa.agua.AguaViewModel
 import com.dariel.relaxulsa.agua.aguaView
 import com.dariel.relaxulsa.calculadora.SumViewModel
 import com.dariel.relaxulsa.calculadora.calculadoraView
+import com.dariel.relaxulsa.cardgame.CardGameView
+import com.dariel.relaxulsa.cardgame.CardGameViewModel
 import com.dariel.relaxulsa.gym.view.gymView
 import com.dariel.relaxulsa.gym.viewmodel.GymViewModel
 import com.dariel.relaxulsa.imc.IMCViewModel
@@ -86,6 +88,9 @@ fun MyAppNavigationView() {
         }
         composable(routes.LottieAnimationView){
             LottieAnimationView(navContoller)
+        }
+        composable(routes.CardGameView){
+            CardGameView(navContoller,CardGameViewModel())
         }
 
     })
@@ -159,6 +164,10 @@ fun FirstPartialView(navController: NavController) {
                 }
                 Button(onClick = { navController.navigate(routes.LottieAnimationView) }) {
                     Text(text="Lottie Animation")
+
+                }
+                Button(onClick = { navController.navigate(routes.CardGameView) }) {
+                    Text(text="Card Game")
 
                 }
             }
